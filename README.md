@@ -6,7 +6,7 @@ context where the bugs were introduced, each study artifact of BugOSS indicates 
 These 20 bug artifacts encompass various cases of regression bugs in real-world. 
 We belive that BugOSS offers a useful basis for empirically investigating regression fuzzing techniques.
 
-Please let us know if you have any question or request for using BugOSS: Jeewoong Kim <jeewoong@handong.ac.kr> and Shin Hong <hongshin@handong.edu>
+Please let us know if you have any question or request for using BugOSS: Jeewoong Kim <jeewoong@chungbuk.ac.kr> and Shin Hong <hongshin@gmail.com>
 
 ## Citing BugOSS
 
@@ -61,7 +61,7 @@ Each artifact provides a realistic regression bug context to reproduce the repor
 ## How to build an artifact
 1. Clone the BugOSS reprository to your machine
    ``` 
-   git clone https://github.com/ARISE-Handong/BugOss.git
+   git clone https://github.com/sdevlab/BugOss.git
    ```
 
 2. Clone the OSS-Fuzz repository since BugOSS uses docker images of the OSS-Fuzz
