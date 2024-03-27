@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `sctp_handle_asconf(struct mbuf *, unsigned int, struct sockaddr *, struct sctp_asconf_chunk *, struct sctp_tcb *, int)`
     - bug locations: [usrsctplib/netinet/sctp_asconf.c:720](https://github.com/sctplab/usrsctp/commit/05bea46702687f26a81c41c3fb1fd1dd3d9c0aa1#diff-0ec0b47c46d30f537fb88f47a502ef53ddebfbf04955128d6f72137bb067e63dR720) 
-- [seed_corpus.tar](https://drive.google.com/file/d/1SxgijItVfmXrFmsCbNkoq87xIy9uOh6w/view?usp=share_link): initial seed corpus at bug-inducing commit (156 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1AX05JdQ4XnDwlURu3n7-6wjSXa4hBf4r/view?usp=sharing): initial seed corpus at bug-inducing commit (156 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 167
 	- \# seed corpus at fix-inducing commit: 167
 - the number of commits between failure-observed commit and BIC: 7

@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `pe_parse_header(PE *, uint64_t, int)`
     - bug locations: [libyara/modules/pe/pe.c:1937-1938](https://github.com/VirusTotal/yara/commit/5cc28d24a251370218448100de4e9817e0d9233e#diff-a20bb88d25ed536935383bd979fdcd18dd1fb83b766eeccbddf3d1f4ed15514bR1937-R1938) 
-- [seed_corpus.tar](https://drive.google.com/file/d/1-HGfAARLzsgXEC7EHWtoX_voMdBydecb/view?usp=share_link): initial seed corpus at bug-inducing commit (9 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1aEwRbWhugDyxNjgokyyqc2x41S7KKEY1/view?usp=sharing): initial seed corpus at bug-inducing commit (9 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 9
 	- \# seed corpus at fix-inducing commit: 9
 - the number of commits between failure-observed commit and BIC: 0 (the same commit)

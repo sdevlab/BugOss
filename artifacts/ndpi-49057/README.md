@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `get_int(const unsigned char *, int, u_int16_t *)`, `ndpi_search_snmp(struct ndpi_detection_module_struct *, struct ndpi_flow_struct *)`
     - bug locations: [src/lib/protocols/snmp_proto.c:74](https://github.com/ntop/nDPI/commit/2edfaeba4ada90ca8771a44132d2b9cc85e45570#diff-29e696c328b272b53e175a7161d9c9d4fa4a314953a711a919511a1ef5e94020R74), [110](https://github.com/ntop/nDPI/commit/2edfaeba4ada90ca8771a44132d2b9cc85e45570#diff-29e696c328b272b53e175a7161d9c9d4fa4a314953a711a919511a1ef5e94020R110), [113](https://github.com/ntop/nDPI/commit/2edfaeba4ada90ca8771a44132d2b9cc85e45570#diff-29e696c328b272b53e175a7161d9c9d4fa4a314953a711a919511a1ef5e94020R113) 
-- [seed_corpus.tar](https://drive.google.com/file/d/1IPe1pzOZhsPjvNRa75NmvvpzNfu4yyZS/view?usp=share_link): initial seed corpus at bug-inducing commit (351 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1CPLNOc3qZdlRZSRhYmwBPWau75j77Xq_/view?usp=sharing): initial seed corpus at bug-inducing commit (351 initial seeds in `seed_corpus/`)
     - \# seed corpus at failure-observed commit: 352
     - \# seed corpus at fix-inducing commit: 352
 - the number of commits between failure-observed commit and BIC: 4

@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `gcd(IntType, IntType)`, `print0x9204(std::ostream, const Value, const ExifData *)`, `floatToRationalCast(float)`
     - bug locations: [src/types.cpp:633](https://github.com/curl/curl/commit/dd7521bcc1b7a6fcb53c31f9bd1192fcc884bd56#diff-76e92705200fa8317ac3f635fd17d0ffe976a42e304edfd6c5ce024857a14ca0R1522) 
-- [seed_corpus.tar](https://drive.google.com/file/d/171Y1RVFmlhelQwRDNwI8Spdi0axqZ4Aa/view?usp=share_link): initial seed corpus at bug-inducing commit (454 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/12FWLztD0Wn8ls7d_oawGvm0x1c_JIDsC/view?usp=sharing): initial seed corpus at bug-inducing commit (454 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 454
 	- \# seed corpus at fix-inducing commit: 460
 - the number of commits between failure-observed commit and BIC: 1

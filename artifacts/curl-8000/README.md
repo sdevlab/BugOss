@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `Curl_httpchunk_read(connectdata *, char *, ssize_t, ssize_t *)`, `strcpy_url(char *, const char *, bool)`
     - bug locations: [lib/transfer.c:1522](https://github.com/curl/curl/commit/dd7521bcc1b7a6fcb53c31f9bd1192fcc884bd56#diff-76e92705200fa8317ac3f635fd17d0ffe976a42e304edfd6c5ce024857a14ca0R1522) 
-- [seed_corpus.tar](https://drive.google.com/file/d/1onSquIuVxm2GLWHjGRi2EDZehqTRNolI/view?usp=share_link): initial seed corpus at bug-inducing commit (4202 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1jA9r2GNbBu3vxk6VtRATpwltqBOclkuY/view?usp=sharing): initial seed corpus at bug-inducing commit (4202 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 4202
 	- \# seed corpus at fix-inducing commit: 4202
 - the number of commits between failure-observed commit and BIC: 0

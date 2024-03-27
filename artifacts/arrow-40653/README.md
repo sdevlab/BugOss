@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `arrow::ipc::internal::FuzzIpcStream(const uint8_t* data, int64_t size)`, `arrow::ipc::internal::FuzzIpcFile(const uint8_t* data, int64_t size)`
     - bug locations: [cpp/src/arrow/ipc/reader.cc:2029](https://github.com/apache/arrow/commit/3c5b62c116733e434508a8673c2d466776b27eed#diff-e992169684aea9845ac776ada4cbb2b5dc711b49e5a3fbc6046c92299e1aefceR2029), [2053](https://github.com/apache/arrow/commit/3c5b62c116733e434508a8673c2d466776b27eed#diff-e992169684aea9845ac776ada4cbb2b5dc711b49e5a3fbc6046c92299e1aefceR2053), [2070](https://github.com/apache/arrow/commit/3c5b62c116733e434508a8673c2d466776b27eed#diff-e992169684aea9845ac776ada4cbb2b5dc711b49e5a3fbc6046c92299e1aefceR2070) 
-- [seed_corpus.tar](https://drive.google.com/file/d/1DLAkdxn2gdPfiyznsrpgkOGSLeKn4jZT/view?usp=sharing): initial seed corpus at bug-inducing commit (10 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1d-Be9yMGicokiwZUMpArAx22xFYhbxI0/view?usp=sharing): initial seed corpus at bug-inducing commit (10 initial seeds in `seed_corpus/`)
     - seed corpus at the latest [commit](https://github.com/apache/arrow/commit/3c5b62c116733e434508a8673c2d466776b27eed) at BIC (7 Oct 2021)
 	- \# seed corpus at failure-observed commit: XX 
 	- \# seed corpus at fix-inducing commit: 10
@@ -44,9 +44,9 @@
     - type: abort 
     - failure stack trace patterns for the expected failure:  
 		```
-	__sanitizer_print_stack_trace  
-	fuzzer::PrintStackTrace()  
-	fuzzer::Fuzzer::CrashCallback()  
+		__sanitizer_print_stack_trace  
+		fuzzer::PrintStackTrace()  
+		fuzzer::Fuzzer::CrashCallback()  
 		```
 
 - `oracle.py` determines the detected failures by fuzzers are induced by the target bug or not. It receives a file which is the execution result of the fuzz target with a failing-input:  

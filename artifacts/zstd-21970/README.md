@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `ERR_getErrorString(ERR_enum)`, `ZSTD_initDCtx_internal(ZSTD_DCtx *)`, `ZSTD_dParam_getBounds(ZSTD_dParameter)`, `ZSTD_DCtx_setParameter(ZSTD_DCtx *, ZSTD_dParameter, int)`, `ZSTD_decompressStream(ZSTD_DStream *, ZSTD_outBuffer *, ZSTD_inBuffer *)`
     - bug locations: [lib/decompress/zstd_decompress.c:1406-1409](https://github.com/facebook/zstd/commit/0ed07f6dfe942627e7724e5b910e23ec3cd8ece8#diff-7f5c5f23152d4a542ea4a90362ca1ee86c0b3d08bd340d1c9d5ac8bfaad934f6R1406-R1409), [1445-1448](https://github.com/facebook/zstd/commit/0ed07f6dfe942627e7724e5b910e23ec3cd8ece8#diff-7f5c5f23152d4a542ea4a90362ca1ee86c0b3d08bd340d1c9d5ac8bfaad934f6R1445-R1448), [1671-1672](https://github.com/facebook/zstd/commit/0ed07f6dfe942627e7724e5b910e23ec3cd8ece8#diff-7f5c5f23152d4a542ea4a90362ca1ee86c0b3d08bd340d1c9d5ac8bfaad934f6R1671-R1672) 
-- [seed_corpus.tar](https://drive.google.com/file/d/1nCL1dTU1PPX-Bha9VJNp-Rekb5oNC5y0/view?usp=share_link): initial seed corpus at bug-inducing commit (12462 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1-xpJmuu69_9oPCo7qWWCFu2w3GMr_Z4w/view?usp=sharing): initial seed corpus at bug-inducing commit (12462 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 12462
 	- \# seed corpus at fix-inducing commit: 12462
 - the number of commits between failure-observed commit and BIC: 4

@@ -22,7 +22,7 @@
     - bug locations:  
         - [src/OT/Layout/GPOS/MarkBasePosFormat1.hh:129](https://github.com/harfbuzz/harfbuzz/commit/8708b9e081192786c027bb7f5f23d76dbe5c19e8#diff-606f88c7b3fb0f49f015411db16a62f80c757c2fac9c606219ca27ef3ab835c1R129), [131-132](https://github.com/harfbuzz/harfbuzz/commit/8708b9e081192786c027bb7f5f23d76dbe5c19e8#diff-606f88c7b3fb0f49f015411db16a62f80c757c2fac9c606219ca27ef3ab835c1R131-R132), [134-137](https://github.com/harfbuzz/harfbuzz/commit/8708b9e081192786c027bb7f5f23d76dbe5c19e8#diff-606f88c7b3fb0f49f015411db16a62f80c757c2fac9c606219ca27ef3ab835c1R134-R137) 
         - [src/OT/Layout/GPOS/MarkLigPosFormat1.hh:111-114](https://github.com/harfbuzz/harfbuzz/commit/8708b9e081192786c027bb7f5f23d76dbe5c19e8#diff-9aec5b7fd9f8ab5736a77e346514a79a2e4463f15ecaa5e31ebf101d96f1b85dR111-R114), [118](https://github.com/harfbuzz/harfbuzz/commit/8708b9e081192786c027bb7f5f23d76dbe5c19e8#diff-9aec5b7fd9f8ab5736a77e346514a79a2e4463f15ecaa5e31ebf101d96f1b85dR118) 
-- [seed_corpus.tar](https://drive.google.com/file/d/15LtQxf0nTr-zddufXYYEyqnUsjLlLFzF/view?usp=sharing): initial seed corpus at bug-inducing commit (1003 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1h9wzn59ChV1UKPm02oX7H5GxIZ1KUbqp/view?usp=sharing): initial seed corpus at bug-inducing commit (1003 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 1003 
 	- \# seed corpus at fix-inducing commit: 1004
 - the number of commits between failure-observed commit and BIC: 6  
@@ -62,7 +62,7 @@
 - fuzzers
     - libFuzzer of llvm 14.0.0
     - AFL++ 4.05c
-- seed_corpus: 2 seeds (seed_corpus.tar)
+- seed_corpus: 1003 seeds (seed_corpus.tar)
 - time to first failure detection (limit 21600s)
     |   Fuzzer  | iter1 | iter2 | iter3 | iter4 | iter5 | iter6 | iter7 | iter8 | iter9 | iter10 |
     | --------- |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|

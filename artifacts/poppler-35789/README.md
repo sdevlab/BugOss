@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `isOk(void)`, `JBIG2Stream::readSegments(void)`
     - bug locations: [poppler/JBIC2Stream.cc:970](https://gitlab.freedesktop.org/poppler/poppler/-/commit/2b2808719d2c91283ae358381391bb0b37d9061d#f620460273a22459b3b2454ed648695f6c0cfe49_971_970) 
-- [seed_corpus.tar](https://drive.google.com/file/d/1N-oMQ-a3UyxZ-BReLxsw5foGnpiZ5woM/view?usp=share_link): initial seed corpus at bug-inducing commit (476 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1HKuwWZ2IQVzKt-jxAyedvS19ggWmnr90/view?usp=sharing): initial seed corpus at bug-inducing commit (476 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 476
 	- \# seed corpus at fix-inducing commit: 476
 - the number of commits between failure-observed commit and BIC: 1

@@ -18,7 +18,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `pixGetBinnedColor(PIX *, PIX *, l_int32, l_int32, NUMA *, l_uint32 **, PIXA *)`
     - bug locations: [src/pix4.c:2803-2805](https://github.com/DanBloomberg/leptonica/commit/8fc49016cf44ecbbab28979442e2781bd064584e#diff-4af4b9f67a672e1ea1a119e5d96ec4be38ec64d9b6ac338497c5a18d8fbaa076R2803-R2805) 
-- [seed_corpus.tar](https://drive.google.com/file/d/1l4r5b3JWadhv4rRJld9zz-z8wZJnYkrj/view?usp=share_link): initial seed corpus at bug-inducing commit (10 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1GJ2SacehKqsOSdvnQ3QVbQw1q8ky9kKc/view?usp=sharing): initial seed corpus at bug-inducing commit (10 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 10 
 	- \# seed corpus at fix-inducing commit: 10
 - the number of commits between failure-observed commit and BIC: 2

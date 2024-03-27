@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `i2v_GENERAL_NAME(X509V3_EXT_METHOD *, GENERAL_NAME *, STACK_OF(CONF_VALUE) *)`, `GENERAL_NAME_print(BIO *, GENERAL_NAME *)`
     - bug locations: [crypto/x509/v3_alt.c:76](https://github.com/openssl/openssl/commit/4baee2d72e0c82bfd6de085df23a1bdc6af887ba#diff-51bd8df033a4f347adf2b0e9b316d9abd423e1a94518f9e8449ac22d9f860c6dR76), [80](https://github.com/openssl/openssl/commit/4baee2d72e0c82bfd6de085df23a1bdc6af887ba#diff-51bd8df033a4f347adf2b0e9b316d9abd423e1a94518f9e8449ac22d9f860c6dR80), [84](https://github.com/openssl/openssl/commit/4baee2d72e0c82bfd6de085df23a1bdc6af887ba#diff-51bd8df033a4f347adf2b0e9b316d9abd423e1a94518f9e8449ac22d9f860c6dR84), [88](https://github.com/openssl/openssl/commit/4baee2d72e0c82bfd6de085df23a1bdc6af887ba#diff-51bd8df033a4f347adf2b0e9b316d9abd423e1a94518f9e8449ac22d9f860c6dR88)  
-- [seed_corpus.tar](https://drive.google.com/file/d/1Wi_-tVzGeIUPEE35EkSA2HYL0xoFsr_P/view?usp=share_link): initial seed corpus at bug-inducing commit (2240 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1n9rFWAyvx5yr1YsQJ14wOD-fD1rltjVx/view?usp=sharing): initial seed corpus at bug-inducing commit (2240 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 2240
 	- \# seed corpus at fix-inducing commit: 2241
 - the number of commits between failure-observed commit and BIC: 9

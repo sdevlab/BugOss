@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `Config::merge(const Config)`
     - bug locations: [common/objstack.hpp:881](https://github.com/GNUAspell/aspell/commit/e0646f9b063b23754951f1254f1ecb7af8ca36f3#diff-074c5653ba8dca085dadb468770e8d4ad22795b35a722c8f064958cefb5c6936R881)  
-- [seed_corpus.tar](https://drive.google.com/file/d/1KKD4fYqTXeykiW01_A3B8nDY5rhBHURU/view?usp=share_link): initial seed corpus at bug-inducing commit (2 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1y7oP1rUvVG8MznZxx5EsJoqzLIQa-k2P/view?usp=sharing): initial seed corpus at bug-inducing commit (2 initial seeds in `seed_corpus/`)
     - seed corpus at the latest [commit](https://github.com/GNUAspell/aspell-fuzz/commit/576059dab2137514bdd236c8189039b557263bd4) before BIC (4 Aug 2019)
         - \# seed corpus at failure-observed commit: 60 
         - \# seed corpus at fix-inducing commit: 60  

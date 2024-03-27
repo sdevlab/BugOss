@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `read_data_compressed(struct archive_read *a, const void **buff, size_t *size, int64_t *offset, size_t looper)`, `expand(struct archive_read *a, int64_t *end)`, `run_filters(struct archive_read *a)`
     - bug locations: [libarchive/archive_read_support_format_rar.c:2182](https://github.com/libarchive/libarchive/commit/52efa50c69653029687bfc545703b7340b7a51e2#diff-bd382f112c3916f64bb3f057aabe01924a79eba84cf1b391887526a7a91b84e3R2182), [2887](https://github.com/libarchive/libarchive/commit/52efa50c69653029687bfc545703b7340b7a51e2#diff-bd382f112c3916f64bb3f057aabe01924a79eba84cf1b391887526a7a91b84e3R2887), [2913](https://github.com/libarchive/libarchive/commit/52efa50c69653029687bfc545703b7340b7a51e2#diff-bd382f112c3916f64bb3f057aabe01924a79eba84cf1b391887526a7a91b84e3R2913) 
-- [seed_corpus.tar](https://drive.google.com/file/d/1JBTngmx-WSt6akqQxMDfML_xVxrpjVXs/view?usp=sharing): initial seed corpus at bug-inducing commit (13 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1mD3ftTpugIZPgGVA1X5T3AgOV7Jp4ch1/view?usp=sharing): initial seed corpus at bug-inducing commit (13 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 13
 	- \# seed corpus at fix-inducing commit: 13
 - the number of commits between failure-observed commit and BIC: 6

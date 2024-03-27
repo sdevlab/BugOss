@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `sas7bdat_submit_columns(sas7bdat_ctx_t *, int)`
     - bug locations: [src/sas/readstat_sas7bdat_read.c:602-603](https://github.com/WizardMac/ReadStat/commit/1de4f389a8ffb07775cb1d99e33cbfa7e96bccf2#diff-e76aa66cad6b541963367ca4d9882bbe943f0c59803011df35c2ec80c0842fbeR602-R603) 
-- seed_corpus.tar(link): initial seed corpus at bug-inducing commit (94 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1_lOadvbIcReKvaeSRCvGHSmx2zXRk0En/view?usp=sharing): initial seed corpus at bug-inducing commit (94 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 94
 	- \# seed corpus at fix-inducing commit: 94
 - the number of commits between failure-observed commit and BIC: 41

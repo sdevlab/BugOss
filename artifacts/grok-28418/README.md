@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `pi_next_lrcp(PacketIter *)`, `pi_next_rlcp(PacketIter *)`, `pi_next_rpcl(PacketIter *)`, `pi_next_pcrl(PacketIter *)`, `pi_next_pcrl(PacketIter *)`, `pi_next_cprl(PacketIter *)`, `pi_create_decompress(grk_image *, CodingParams *, uint16_t)`, `pi_create_compress(const grk_image *, CodingParams *, uint16_t, J2K_T2_MODE)`, `pi_destroy(PacketIter *)`, `T2Decompress::decompress_packets(uint16_t, ChunkBuffer *, uint64_t *)`
     - bug locations: [src/lib/jp2/codestream/PacketIter.cpp:924-927](https://github.com/GrokImageCompression/grok/commit/93e6af95ec46bbba5e112a1fbdbdb6a1294d61d8#diff-d3dc197db944ac5e717f0d776f5aaff7157ab7b1b22540ecdfadf0facc245d26L924-L928), [1052-1055](https://github.com/GrokImageCompression/grok/commit/93e6af95ec46bbba5e112a1fbdbdb6a1294d61d8#diff-d3dc197db944ac5e717f0d776f5aaff7157ab7b1b22540ecdfadf0facc245d26L1052-L1056) 
-- [seed_corpus.tar](https://drive.google.com/file/d/12hsa8mJkrYwSQovBUVWzS1U7KoHZYFE2/view?usp=share_link): initial seed corpus at bug-inducing commit (178 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1CB_KJ0fGA7Nf4dPcLllViD-9UtQwcTEd/view?usp=sharing): initial seed corpus at bug-inducing commit (178 initial seeds in `seed_corpus/`)
     - seed corpus at the latest [commit](https://github.com/GrokImageCompression/grok-test-data/commit/5118df38d89d26949c82d9143c74d80656781089) before BIC  (1 Dec 2020)
 		- `input/conformance/*.jp2`, `input/conformance/*.j2k`, `input/nonregression/*.jp2`, `input/nonregression/*.j2k`
 	- \# seed corpus at failure-observed commit: 178 

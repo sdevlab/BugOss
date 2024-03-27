@@ -20,7 +20,7 @@
     - search the first commit that failure occurred by reproducing on the commit history with the fuzz target and the bug-revealing input
     - changed functions: `RMFDataset::FlushCache(bool)`
     - bug locations: [frmts/rmf/rmfdataset.cpp:1055](https://github.com/OSGeo/gdal/commit/9e2d1f33c9049e925019a3c0c1e6261968a19758#diff-25464b5772bae2aa5a78a46f48ce9c49578c6760d77d80f1cc684444a9f39103R1055) 
-- [seed_corpus.tar](https://drive.google.com/file/d/1ZpzLUy8mcbzgiAzOCrSEvzAghFA3cx_2/view?usp=share_link): initial seed corpus at bug-inducing commit (1615 initial seeds in `seed_corpus/`)
+- [seed_corpus.tar](https://drive.google.com/file/d/1tQTBidC20LqXyetf8MPXqboOb_pq7RoL/view?usp=sharing): initial seed corpus at bug-inducing commit (1615 initial seeds in `seed_corpus/`)
 	- \# seed corpus at failure-observed commit: 1615
 	- \# seed corpus at fix-inducing commit: 1615
 - the number of commits between failure-observed commit and BIC: 7
@@ -57,7 +57,7 @@
 - fuzzers
     - libFuzzer of llvm 14.0.0
     - AFL++ 4.05c
-- seed_corpus: 4202 seeds (seed_corpus.tar)
+- seed_corpus: 1615 seeds (seed_corpus.tar)
 - time to first failure detection (limit 21600s)
     |   Fuzzer  | iter1 | iter2 | iter3 | iter4 | iter5 | iter6 | iter7 | iter8 | iter9 | iter10 |
     | --------- |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:------:|
